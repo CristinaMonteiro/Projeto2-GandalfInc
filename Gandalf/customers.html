@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gandalf Inc. | Customers </title>
+    <link rel="stylesheet" href="./Css/register.css">
+</head>
+<body>
+    <header>
+        <div class="menu-login">
+            <a href="index.html"> Home </a>
+            <a href="register.html"> Register </a>
+            <a href="customers.html"> Customers</a>
+            <a href="orders.html"> Orders </a>
+            <a href="stock.html"> Stock </a>
+        </div>
+    </header>
+
+    <h1> Customers</h1>
+
+    <!-- Tabela Orders já feitas -->
+<div class="table-responsive">
+    <table class="table">
+      <thead>
+          <tr>
+              <th> </th>
+              <th> Name </th>
+              <th> E-mail </th>
+              <th> Contact </th>
+              <th> Last purchase </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td> 1 </td>
+            <td> António Costa </td>
+            <td> ac@gmail.com </td>
+            <td> 919 900 800 </td>
+            <td> <a href="#"> see more</td></a>
+        </tr>
+        <tr>
+            <td> 2 </td>
+            <td> Ana Sousa </td>
+            <td> as@gmail.com </td>
+            <td> 934 900 800 </td>
+            <td> <a href="#"> see more</td></a>
+        </tr>
+        <tr>
+            <td> 3 </td>
+            <td> Beatriz Silva </td>
+            <td> beasilva@hotmail.com </td>
+            <td> 925 900 800 </td>
+            <td> <a href="#"> see more</td></a>
+        </tr>
+        <tr>
+            <td> 4 </td>
+            <td> Carlos Magalhães </td>
+            <td> c_m@hotmail.com </td>
+            <td> 915 590 800 </td>
+            <td> <a href="#"> see more</td></a>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<!-- #endregion -->
+
+
+<form method="post" action="server.php" >
+    <h2> New Customer </h2>
+    <div class="input-group">
+        <label> Name </label>
+        <input type="text" name="name" value="">
+    </div>
+    <div class="input-group">
+        <label> E-mail </label>
+        <input type="email" name="email" value="">
+    </div>
+    <div class="input-group">
+        <label> Phone Number </label>
+        <input type="tel" name="phone number" value="">
+    </div>
+    
+    <div class="input-group">
+        <button class="btn" type="submit" name="Add">Add</button>
+    </div>
+</form>
+
+
+
+
+</body>
+</html>

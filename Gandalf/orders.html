@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gandalf Inc. | Orders </title>
+    <link rel="stylesheet" href="./Css/register.css">
+</head>
+<body>
+    <header>
+        <div class="menu-login">
+            <nav>
+                <a href="index.html"> Home </a>
+                <a href="register.html"> Register </a>
+                <a href="customers.html"> Customers</a>
+                <a href="orders.html"> Orders </a>
+                <a href="stock.html"> Stock </a>
+            </nav>
+        </div>
+    </header>
+
+    <h1> Orders </h1>
+
+<!-- Tabela Orders já feitas -->
+<div class="table-responsive">
+    <table class="table">
+      <thead>
+          <tr>
+              <th>Order <br> Number</th>
+              <th> Customer </th>
+              <th> Contact </th>
+              <th> Article </th>
+              <th> Delivery date </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td> 1 </td>
+            <td> António Costa </td>
+            <td> 919 900 800 </td>
+            <td> nin1 </td>
+            <td> 01/11/2020 </td>
+        </tr>
+        <tr>
+            <td> 2 </td>
+            <td> Ana Sousa </td>
+            <td> 934 900 800 </td>
+            <td> remplay2 </td>
+            <td> 02/11/2020 </td>
+        </tr>
+        <tr>
+            <td> 3 </td>
+            <td> Beatriz Silva </td>
+            <td> 925 900 800 </td>
+            <td> remplay3 </td>
+            <td> 03/11/2020 </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<!-- #endregion -->
+
+
+
+<form method="post" action="server.php" >
+    <h2> Add new Orders </h2>
+    <div class="input-group">
+        <label>Product Reference</label>
+        <input type="text" name="product reference" value="">
+    </div>
+    <div class="input-group">
+        <label> Customer </label>
+        <input type="text" name="reference" value="">
+    </div>
+    
+    <div class="input-group">
+        <button class="btn" type="submit" name="Add">Add new order</button>
+    </div>
+</form>
+
+</body>
+</html>
